@@ -1,2 +1,2 @@
 # Adventurers-Portfolio
-![Wireframe Image](./assets/images/wirefarme.png)
+![Wireframe Image](/assets/images/wirefarme.png)
