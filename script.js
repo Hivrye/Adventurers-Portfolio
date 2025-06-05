@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Animate the progress bar
     const progressBar = document.querySelectorAll('.progress');
+
     progressBar.forEach(bar => {
-        const width = bar.style.width;
-        bar.style.width = '0';
-        setTimeout(() => {
-            bar.style.width = width;
-        }, 500);
+      const level = bar.getAttribute('data-label');
+      bar.style.width = '0%'; // Start at 0%
+
+
+      setTimeout(() => {
+        bar.style.width = `${level}%`;
+      }, 400)
+    
     });
 
     // Contact form submission
